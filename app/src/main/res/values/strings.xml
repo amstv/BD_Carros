@@ -1,0 +1,66 @@
+<resources>
+    <!-- Título da app e das telas -->
+    <string name="app_name">BD Carros</string>
+    <string name="titulo_fragmentcarros">Lista de Carros</string>
+    <string name="title_fragment_detalhecarro">Detalhes do Carro</string>
+    <string name="title_fragment_edicaocarro">Edição do Carro</string>
+    <string name="title_fragment_novocarro">Novo Carro</string>
+
+    <!-- NavigationView -->
+    <!-- Operações do tratador de eventos da Drawer, o Toogle -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_listcarros">Lista de Carros</string>
+    <string name="nav_sobre">Sobre</string>
+    <string name="nav_configuracoes">Configurações</string>
+    <!-- Rodapé da NavigationView -->
+    <string name="direitos_autorais">IFSul Bagé - todos os direitos reservados.</string>
+
+    <!-- Tabs Carros -->
+    <string name="tabs_todos">Todos</string>
+    <string name="tabs_classicos">Clássicos</string>
+    <string name="tabs_esportivos">Esportivos</string>
+    <string name="tabs_luxo">Luxo</string>
+
+    <!-- Tipo de Carros, como é persistido no BD -->
+    <string name="tipo_todos">Todos</string>
+    <string name="tipo_classicos">Clássicos</string>
+    <string name="tipo_esportivos">Esportivos</string>
+    <string name="tipo_luxo">Luxo</string>
+
+    <!-- Menu, em menu_fragmentcarros.xml-->
+    <string name="action_pesquisar">Pesquisar</string>
+    <string name="hint_pesquisar">Nome do carro</string>
+    <string name="action_novo">Novo</string>
+
+    <!-- Menu em menu_fragment_edicaocarro.xml-->
+    <string name="action_salvar">Salvar</string>
+    <string name="action_excluir">Excluir</string>
+
+    <!-- Menu em menu_fragment_detalhecarro.xml -->
+    <string name="action_editar">Editar</string>
+
+    <!-- Textos para os layouts dos Fragmentos Novo, Detalhe e Edicao -->
+    <string name="tipo_textview">Tipo:</string>
+    <string name="nome_textview">Nome:</string>
+    <string name="desc_textview">Descrição:</string>
+    <string name="Foto_textview">Foto:</string>
+    <string name="Info_textview">Vídeo:</string>
+    <string name="latitude_textview">Latitude:</string>
+    <string name="longitude_textview">Longitude:</string>
+    <string name="urlfoto_textview">URL Foto:</string>
+    <string name="urlvideo_textview">URL Vídeo:</string>
+    <string name="urlvideo_hint">Clique para obter a URL</string>
+
+    <!-- Mensagens validações -->
+    <!-- NovoCarroFragment.java -->
+    <string name="val_dadosinputs">Você deve inserir pelo menos o nome do carro.</string>
+
+    <!-- Mensagens alerts -->
+    <string name="alert_title_wait">Aguarde</string>
+    <string name="alert_message_processando">Processando ...</string>
+    <string name="alertdialog_buttom_ok">OK</string>
+    <string name="alert_title_resultadodaoperacao">Resultado da Operação</string>
+    <string name="alert_message_realizadacomsucesso">Realizada com sucesso.</string>
+    <string name="alert_message_erroaorealizaroperacao">Erro ao realizar a operação. Por favor, avise o desenvolvedor.</string>
+</resources>
