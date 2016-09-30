@@ -1,11 +1,7 @@
 package aulas.pdmi.bd_carros.adapter;
 
-import android.Manifest;
 import android.content.Context;
-import android.content.pm.PackageManager;
 import android.net.Uri;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -26,14 +22,14 @@ import aulas.pdmi.bd_carros.model.Carro;
  * Neste projeto a List está sendo alimentada com dados oriundos de um banco de dados SQLite.
  * @author Vagner Pinto da Silva
  */
-public class CarroAdapter extends RecyclerView.Adapter<CarroAdapter.CarrosViewHolder> {
-    protected static final String TAG = "CarroAdapter";
+public class CarrosAdapter extends RecyclerView.Adapter<CarrosAdapter.CarrosViewHolder> {
+    protected static final String TAG = "CarrosAdapter";
     private final List<Carro> carros;
     private final Context context;
 
     private CarroOnClickListener carroOnClickListener;
 
-    public CarroAdapter(Context context, List<Carro> carros, CarroOnClickListener carroOnClickListener) {
+    public CarrosAdapter(Context context, List<Carro> carros, CarroOnClickListener carroOnClickListener) {
         this.context = context;
         this.carros = carros;
         this.carroOnClickListener = carroOnClickListener;

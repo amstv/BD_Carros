@@ -23,7 +23,7 @@ import java.util.List;
 import aulas.pdmi.bd_carros.R;
 import aulas.pdmi.bd_carros.activity.CarroActivity;
 import aulas.pdmi.bd_carros.activity.CarrosActivity;
-import aulas.pdmi.bd_carros.adapter.CarroAdapter;
+import aulas.pdmi.bd_carros.adapter.CarrosAdapter;
 import aulas.pdmi.bd_carros.model.Carro;
 import aulas.pdmi.bd_carros.service.CarroServiceBD;
 
@@ -114,17 +114,17 @@ public class CarrosFragment extends BaseFragment implements SearchView.OnQueryTe
         }
 
         //Context, fonte de dados, tratador do evento onClick
-        recyclerView.setAdapter(new CarroAdapter(getContext(), carroList, onClickCarro()));
+        recyclerView.setAdapter(new CarrosAdapter(getContext(), carroList, onClickCarro()));
 
         return true;
     }
 
     /*
-        Este método utiliza a interface declarada na classe CarroAdapter para tratar o evento onClick do item da lista.
+        Este método utiliza a interface declarada na classe CarrosAdapter para tratar o evento onClick do item da lista.
      */
-    protected CarroAdapter.CarroOnClickListener onClickCarro() {
+    protected CarrosAdapter.CarroOnClickListener onClickCarro() {
         //chama o contrutor da interface (implícito) para criar uma instância da interface declarada no adaptador.
-        return new CarroAdapter.CarroOnClickListener() {
+        return new CarrosAdapter.CarroOnClickListener() {
             // Aqui trata o evento onItemClick.
             @Override
             public void onClickCarro(View view, int idx) {
@@ -168,7 +168,7 @@ public class CarrosFragment extends BaseFragment implements SearchView.OnQueryTe
             //copia a lista de carros para uso no onQueryTextChange()
             CarrosFragment.this.carros = carros;
             //atualiza a view na UIThread
-            recyclerView.setAdapter(new CarroAdapter(getContext(), carros, onClickCarro())); //Context, fonte de dados, tratador do evento onClick
+            recyclerView.setAdapter(new CarrosAdapter(getContext(), carros, onClickCarro())); //Context, fonte de dados, tratador do evento onClick
         }
     }//fim classe interna
 

@@ -165,6 +165,9 @@ public class EdicaoCarroFragment extends BaseFragment {
                 new CarrosTask().execute(DELETE); //executa a operação DELETE em uma thread AsyncTask
                 break;
             }
+            case android.R.id.home:
+                getActivity().finish();
+                break;
         }
         return false;
     }
