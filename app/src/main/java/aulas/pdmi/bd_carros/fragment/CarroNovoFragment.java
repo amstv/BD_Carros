@@ -26,7 +26,7 @@ import aulas.pdmi.bd_carros.service.CarroServiceBD;
  * Este fragmento controla a inclusão de um novo carro.
  * Created by vagner on 25/05/16.
  */
-public class NovoCarroFragment extends BaseFragment {
+public class CarroNovoFragment extends BaseFragment {
 
     private Carro carro; //uma instância da classe Carro com escopo global para utilização em membros da classe
     //componentes <-> objeto carro

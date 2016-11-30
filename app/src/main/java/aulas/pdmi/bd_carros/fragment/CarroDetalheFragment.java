@@ -36,7 +36,7 @@ import aulas.pdmi.bd_carros.model.Carro;
  * Este fragmento controla o detalhe do carro.
  * Created by vagner on 29/08/16.
  */
-public class DetalheCarroFragment extends BaseFragment implements OnMapReadyCallback {
+public class CarroDetalheFragment extends BaseFragment implements OnMapReadyCallback {
 
     private Carro carro; //uma instância da classe Carro com escopo global para utilização em membros da classe
     private ProgressBar progressBarRest;  //uma progressbar para informar o processamento REST
@@ -149,9 +149,9 @@ public class DetalheCarroFragment extends BaseFragment implements OnMapReadyCall
         switch (item.getItemId()) {
             case R.id.menuitem_editar: {
                 //Substitui o Fragmento no container R.id.fragment_container, componente do layout content_main.xml
-                EdicaoCarroFragment edicaoCarroFragment = new EdicaoCarroFragment();
-                edicaoCarroFragment.setCarro(this.carro);
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, edicaoCarroFragment).commit();
+                CarroEdicaoFragment carroEdicaoFragment = new CarroEdicaoFragment();
+                carroEdicaoFragment.setCarro(this.carro);
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, carroEdicaoFragment).commit();
                 break;
             }
             case android.R.id.home:

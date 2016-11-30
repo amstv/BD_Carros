@@ -133,7 +133,7 @@ public class CarrosFragment extends BaseFragment implements SearchView.OnQueryTe
                 //chama outra Activity para detalhar ou editar o carro clicado pelo usuário
                 Intent intent = new Intent(getContext(), CarroActivity.class); //configura uma Intent explícita
                 intent.putExtra("carro", carro); //inseri um extra com a referência para o objeto Carro
-                intent.putExtra("qualFragmentAbrir", "DetalheCarroFragment");
+                intent.putExtra("qualFragmentAbrir", "CarroDetalheFragment");
                 startActivity(intent);
             }
         };

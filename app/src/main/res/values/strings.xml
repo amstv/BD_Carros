@@ -53,7 +53,7 @@
     <string name="urlvideo_hint">Clique para obter a URL</string>
 
     <!-- Mensagens validações -->
-    <!-- NovoCarroFragment.java -->
+    <!-- CarroNovoFragment.java -->
     <string name="val_dadosinputs">Você deve inserir pelo menos o nome do carro.</string>
 
     <!-- Mensagens alerts -->
